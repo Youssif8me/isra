@@ -9,16 +9,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(to right,#6157ff,#EE49FD);
+    gap: 10px;
 }
 
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 300px;
     width: 300px;
     backdrop-filter: blur(400px);
@@ -33,27 +34,4 @@ h1{
     background: linear-gradient(to left, #103ce7, #bb17ca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: yoyo 3s linear infinite;
-    opacity: 0;
-    transition: 1s linear;
-}
-
-.op{
-    width: 150px;
-    height: 40px;
-    background: linear-gradient(#c5a208,#e79b0c);
-    border: none;
-    outline: none;
-    border-radius: 50px;
-    box-shadow: 0 19px 29px -11px #a4751b;;
-    transition: 0.1s ;
-}
-
-.op:hover{
-    transform: translateY(5px);
-    box-shadow: none;
-}
-
-.op:active{
-    transform: scale(0.9) translateY(5px);
 }
